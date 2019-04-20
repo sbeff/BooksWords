@@ -5,6 +5,60 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="36h-hd-hr7">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" id="Ibc-f1-XQL" customClass="HomeViewController" customModule="BooksWords" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IWv-hI-0w3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BooksWords" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NBO-C2-tBa">
+                                <rect key="frame" x="116" y="60" width="182" height="39"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="32"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ILE-6T-gMj" customClass="BorderedButton" customModule="BooksWords" customModuleProvider="target">
+                                <rect key="frame" x="101" y="163" width="212" height="33"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <state key="normal" title="📘 Choose from collection">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4GV-ld-J3V" customClass="BorderedButton" customModule="BooksWords" customModuleProvider="target">
+                                <rect key="frame" x="141.5" y="228" width="131" height="33"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <state key="normal" title="🌐 Open an URL">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" name="MainRed"/>
+                        <constraints>
+                            <constraint firstItem="ILE-6T-gMj" firstAttribute="centerX" secondItem="IWv-hI-0w3" secondAttribute="centerX" id="FFu-pX-0bi"/>
+                            <constraint firstItem="4GV-ld-J3V" firstAttribute="centerX" secondItem="IWv-hI-0w3" secondAttribute="centerX" id="Vki-pd-uc3"/>
+                            <constraint firstItem="ILE-6T-gMj" firstAttribute="top" secondItem="NBO-C2-tBa" secondAttribute="bottom" constant="64" id="bfN-Do-hS0"/>
+                            <constraint firstItem="4GV-ld-J3V" firstAttribute="top" secondItem="ILE-6T-gMj" secondAttribute="bottom" constant="32" id="cmh-w8-BJR"/>
+                            <constraint firstItem="NBO-C2-tBa" firstAttribute="centerX" secondItem="IWv-hI-0w3" secondAttribute="centerX" id="pHH-wZ-dEt"/>
+                            <constraint firstItem="NBO-C2-tBa" firstAttribute="top" secondItem="cmv-za-CjM" secondAttribute="top" constant="16" id="yrY-1E-RTO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cmv-za-CjM"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9w7-Eb-3SN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="160.86956521739131" y="-208.25892857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="MainRed">
+            <color red="0.90588235294117647" green="0.29803921568627451" blue="0.23529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>

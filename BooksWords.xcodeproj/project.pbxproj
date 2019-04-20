@@ -12,6 +12,10 @@
 		A8CF47C9226B66F000F61FEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8CF47C8226B66F000F61FEE /* Assets.xcassets */; };
 		A8CF47CC226B66F000F61FEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8CF47CA226B66F000F61FEE /* LaunchScreen.storyboard */; };
 		A8CF47D7226B66F000F61FEE /* BooksWordsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CF47D6226B66F000F61FEE /* BooksWordsTests.swift */; };
+		A8CF47E5226B6ED100F61FEE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CF47E4226B6ED100F61FEE /* HomeViewController.swift */; };
+		A8CF47F7226B829200F61FEE /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CF47F6226B829200F61FEE /* Storyboarded.swift */; };
+		A8CF47F9226B83A200F61FEE /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CF47F8226B83A200F61FEE /* BorderedButton.swift */; };
+		A8CF47FD226B900300F61FEE /* UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CF47FC226B900300F61FEE /* UINavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,10 @@
 		A8CF47D2226B66F000F61FEE /* BooksWordsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BooksWordsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8CF47D6226B66F000F61FEE /* BooksWordsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksWordsTests.swift; sourceTree = "<group>"; };
 		A8CF47D8226B66F000F61FEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8CF47E4226B6ED100F61FEE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A8CF47F6226B829200F61FEE /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		A8CF47F8226B83A200F61FEE /* BorderedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedButton.swift; sourceTree = "<group>"; };
+		A8CF47FC226B900300F61FEE /* UINavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +83,9 @@
 		A8CF47C0226B66EF00F61FEE /* BooksWords */ = {
 			isa = PBXGroup;
 			children = (
+				A8CF47E3226B6EC400F61FEE /* Controller */,
+				A8CF47EA226B767B00F61FEE /* Extension */,
+				A8CF47F5226B828500F61FEE /* Protocol */,
 				A8CF47E2226B6BCC00F61FEE /* View */,
 				A8CF47E1226B698E00F61FEE /* Supporting files */,
 			);
@@ -105,8 +116,33 @@
 			children = (
 				A8CF47CA226B66F000F61FEE /* LaunchScreen.storyboard */,
 				A8CF47C5226B66EF00F61FEE /* Main.storyboard */,
+				A8CF47F8226B83A200F61FEE /* BorderedButton.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		A8CF47E3226B6EC400F61FEE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A8CF47E4226B6ED100F61FEE /* HomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A8CF47EA226B767B00F61FEE /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A8CF47FC226B900300F61FEE /* UINavigationController.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		A8CF47F5226B828500F61FEE /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				A8CF47F6226B829200F61FEE /* Storyboarded.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,6 +247,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8CF47C2226B66EF00F61FEE /* AppDelegate.swift in Sources */,
+				A8CF47F9226B83A200F61FEE /* BorderedButton.swift in Sources */,
+				A8CF47FD226B900300F61FEE /* UINavigationController.swift in Sources */,
+				A8CF47E5226B6ED100F61FEE /* HomeViewController.swift in Sources */,
+				A8CF47F7226B829200F61FEE /* Storyboarded.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
