@@ -13,11 +13,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
     
+    var coordinator: MainCoordinator?
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        let homeViewController: HomeViewController = HomeViewController.instantiate()
+        UINavigationBar.appearance().tintColor = UIColor.white
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
         
         let navigationController: UINavigationController = UINavigationController()
-        navigationController.pushViewController(homeViewController, animated: false)
+        
+        coordinator = MainCoordinator(navigationController: navigationController)
+        coordinator?.start()
         
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = navigationController

@@ -10,6 +10,10 @@ import UIKit
 
 final class HomeViewController: UIViewController, Storyboarded {
     
+    // MARK: - Coordinator
+    
+    weak var coordinator: MainCoordinator?
+    
     // MARK: - IBOutlets
     
     @IBOutlet private var logoImageView: UIImageView!
@@ -43,6 +47,12 @@ final class HomeViewController: UIViewController, Storyboarded {
         let panGestureRecognizer: UIPanGestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(handlePan(_:)))
         logoImageView.isUserInteractionEnabled = true
         logoImageView.addGestureRecognizer(panGestureRecognizer)
+    }
+    
+    // MARK: - IBActions
+    
+    @IBAction func chooseFromCollectionButtonTapped() {
+        coordinator?.openLibraryBook()
     }
     
     // MARK: - Methods

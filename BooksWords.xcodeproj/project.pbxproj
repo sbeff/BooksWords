@@ -16,6 +16,11 @@
 		A8CF47F7226B829200F61FEE /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CF47F6226B829200F61FEE /* Storyboarded.swift */; };
 		A8CF47F9226B83A200F61FEE /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CF47F8226B83A200F61FEE /* BorderedButton.swift */; };
 		A8CF47FD226B900300F61FEE /* UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CF47FC226B900300F61FEE /* UINavigationController.swift */; };
+		A8CF47FF226BC34000F61FEE /* LibraryBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CF47FE226BC34000F61FEE /* LibraryBookViewController.swift */; };
+		A8CF4803226BC3CD00F61FEE /* BookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CF4801226BC3CD00F61FEE /* BookCell.swift */; };
+		A8CF4804226BC3CD00F61FEE /* BookCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8CF4802226BC3CD00F61FEE /* BookCell.xib */; };
+		A8CF4809226C5F3700F61FEE /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CF4808226C5F3700F61FEE /* Coordinator.swift */; };
+		A8CF480C226C5FA200F61FEE /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CF480B226C5FA200F61FEE /* MainCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +47,11 @@
 		A8CF47F6226B829200F61FEE /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
 		A8CF47F8226B83A200F61FEE /* BorderedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedButton.swift; sourceTree = "<group>"; };
 		A8CF47FC226B900300F61FEE /* UINavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationController.swift; sourceTree = "<group>"; };
+		A8CF47FE226BC34000F61FEE /* LibraryBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryBookViewController.swift; sourceTree = "<group>"; };
+		A8CF4801226BC3CD00F61FEE /* BookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
+		A8CF4802226BC3CD00F61FEE /* BookCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookCell.xib; sourceTree = "<group>"; };
+		A8CF4808226C5F3700F61FEE /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		A8CF480B226C5FA200F61FEE /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +95,7 @@
 			children = (
 				A8CF47E3226B6EC400F61FEE /* Controller */,
 				A8CF47EA226B767B00F61FEE /* Extension */,
+				A8CF480A226C5F8300F61FEE /* Presenter */,
 				A8CF47F5226B828500F61FEE /* Protocol */,
 				A8CF47E2226B6BCC00F61FEE /* View */,
 				A8CF47E1226B698E00F61FEE /* Supporting files */,
@@ -114,6 +125,7 @@
 		A8CF47E2226B6BCC00F61FEE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A8CF4800226BC3BD00F61FEE /* Cell */,
 				A8CF47CA226B66F000F61FEE /* LaunchScreen.storyboard */,
 				A8CF47C5226B66EF00F61FEE /* Main.storyboard */,
 				A8CF47F8226B83A200F61FEE /* BorderedButton.swift */,
@@ -125,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				A8CF47E4226B6ED100F61FEE /* HomeViewController.swift */,
+				A8CF47FE226BC34000F61FEE /* LibraryBookViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -140,9 +153,27 @@
 		A8CF47F5226B828500F61FEE /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
+				A8CF4808226C5F3700F61FEE /* Coordinator.swift */,
 				A8CF47F6226B829200F61FEE /* Storyboarded.swift */,
 			);
 			path = Protocol;
+			sourceTree = "<group>";
+		};
+		A8CF4800226BC3BD00F61FEE /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A8CF4801226BC3CD00F61FEE /* BookCell.swift */,
+				A8CF4802226BC3CD00F61FEE /* BookCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		A8CF480A226C5F8300F61FEE /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A8CF480B226C5FA200F61FEE /* MainCoordinator.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,6 +257,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8CF4804226BC3CD00F61FEE /* BookCell.xib in Resources */,
 				A8CF47CC226B66F000F61FEE /* LaunchScreen.storyboard in Resources */,
 				A8CF47C9226B66F000F61FEE /* Assets.xcassets in Resources */,
 				A8CF47C7226B66EF00F61FEE /* Main.storyboard in Resources */,
@@ -246,10 +278,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8CF4809226C5F3700F61FEE /* Coordinator.swift in Sources */,
 				A8CF47C2226B66EF00F61FEE /* AppDelegate.swift in Sources */,
+				A8CF47FF226BC34000F61FEE /* LibraryBookViewController.swift in Sources */,
 				A8CF47F9226B83A200F61FEE /* BorderedButton.swift in Sources */,
+				A8CF4803226BC3CD00F61FEE /* BookCell.swift in Sources */,
 				A8CF47FD226B900300F61FEE /* UINavigationController.swift in Sources */,
 				A8CF47E5226B6ED100F61FEE /* HomeViewController.swift in Sources */,
+				A8CF480C226C5FA200F61FEE /* MainCoordinator.swift in Sources */,
 				A8CF47F7226B829200F61FEE /* Storyboarded.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
