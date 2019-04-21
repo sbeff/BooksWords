@@ -14,6 +14,10 @@ final class LibraryBookViewController: UIViewController, Storyboarded {
     
     @IBOutlet private var collectionView: UICollectionView!
     
+    // MARK: - ViewModel
+    
+    var viewModel: [LibraryBookViewModel] = BookHelper.getLibraryBookViewModel()
+    
     // MARK: - UIViewController lifecycle
     
     override func viewDidLoad() {
@@ -50,11 +54,13 @@ final class LibraryBookViewController: UIViewController, Storyboarded {
 
 extension LibraryBookViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 1
+        return viewModel.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell: BookCell = collectionView.dequeueReusableCell(withReuseIdentifier: "BookCell", for: indexPath) as! BookCell
+        
+        cell.viewModel = viewModel[indexPath.row]
         
         return cell
     }

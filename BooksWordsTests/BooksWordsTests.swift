@@ -18,4 +18,11 @@ class BooksWordsTests: XCTestCase {
     override func tearDown() {
         
     }
+    
+    func testLibraryBookViewModel() {
+        let libraryBookViewModel: LibraryBookViewModel = LibraryBookViewModel(book: Book(title: "The Old Man and the Sea", author: "Ernest Hemingway", fileName: "TheOldManAndTheSea"))
+        
+        XCTAssertEqual(libraryBookViewModel.title, "The Old Man and the Sea")
+        XCTAssertEqual(libraryBookViewModel.author, "Ernest Hemingway")
+    }
 }

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A85C9120226CDD9800D34161 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85C911F226CDD9800D34161 /* Book.swift */; };
+		A85C9123226CDDD700D34161 /* LibraryBookViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85C9122226CDDD700D34161 /* LibraryBookViewModel.swift */; };
+		A85C9126226CE47E00D34161 /* BookHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85C9125226CE47E00D34161 /* BookHelper.swift */; };
 		A8CF47C2226B66EF00F61FEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CF47C1226B66EF00F61FEE /* AppDelegate.swift */; };
 		A8CF47C7226B66EF00F61FEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8CF47C5226B66EF00F61FEE /* Main.storyboard */; };
 		A8CF47C9226B66F000F61FEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8CF47C8226B66F000F61FEE /* Assets.xcassets */; };
@@ -34,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A85C911F226CDD9800D34161 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		A85C9122226CDDD700D34161 /* LibraryBookViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryBookViewModel.swift; sourceTree = "<group>"; };
+		A85C9125226CE47E00D34161 /* BookHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookHelper.swift; sourceTree = "<group>"; };
 		A8CF47BE226B66EF00F61FEE /* BooksWords.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BooksWords.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8CF47C1226B66EF00F61FEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8CF47C6226B66EF00F61FEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -72,6 +78,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A85C911E226CDD8500D34161 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A85C911F226CDD9800D34161 /* Book.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A85C9121226CDDC300D34161 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A85C9122226CDDD700D34161 /* LibraryBookViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A85C9124226CE46F00D34161 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				A85C9125226CE47E00D34161 /* BookHelper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		A8CF47B5226B66EF00F61FEE = {
 			isa = PBXGroup;
 			children = (
@@ -95,9 +125,12 @@
 			children = (
 				A8CF47E3226B6EC400F61FEE /* Controller */,
 				A8CF47EA226B767B00F61FEE /* Extension */,
+				A85C9124226CE46F00D34161 /* Helper */,
+				A85C911E226CDD8500D34161 /* Model */,
 				A8CF480A226C5F8300F61FEE /* Presenter */,
 				A8CF47F5226B828500F61FEE /* Protocol */,
 				A8CF47E2226B6BCC00F61FEE /* View */,
+				A85C9121226CDDC300D34161 /* ViewModel */,
 				A8CF47E1226B698E00F61FEE /* Supporting files */,
 			);
 			path = BooksWords;
@@ -280,12 +313,15 @@
 			files = (
 				A8CF4809226C5F3700F61FEE /* Coordinator.swift in Sources */,
 				A8CF47C2226B66EF00F61FEE /* AppDelegate.swift in Sources */,
+				A85C9126226CE47E00D34161 /* BookHelper.swift in Sources */,
 				A8CF47FF226BC34000F61FEE /* LibraryBookViewController.swift in Sources */,
 				A8CF47F9226B83A200F61FEE /* BorderedButton.swift in Sources */,
 				A8CF4803226BC3CD00F61FEE /* BookCell.swift in Sources */,
 				A8CF47FD226B900300F61FEE /* UINavigationController.swift in Sources */,
 				A8CF47E5226B6ED100F61FEE /* HomeViewController.swift in Sources */,
 				A8CF480C226C5FA200F61FEE /* MainCoordinator.swift in Sources */,
+				A85C9123226CDDD700D34161 /* LibraryBookViewModel.swift in Sources */,
+				A85C9120226CDD9800D34161 /* Book.swift in Sources */,
 				A8CF47F7226B829200F61FEE /* Storyboarded.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

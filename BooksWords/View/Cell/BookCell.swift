@@ -18,6 +18,15 @@ final class BookCell: UICollectionViewCell {
     
     @IBOutlet private var authorLabel: UILabel!
     
+    // MARK: - ViewModel
+    
+    var viewModel: LibraryBookViewModel! {
+        didSet {
+            titleLabel.text = viewModel.title
+            authorLabel.text = viewModel.author
+        }
+    }
+    
     // MARK: - UIView lifecycle
     
     override func awakeFromNib() {
