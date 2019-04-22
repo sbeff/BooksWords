@@ -10,6 +10,18 @@
 		A85C9120226CDD9800D34161 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85C911F226CDD9800D34161 /* Book.swift */; };
 		A85C9123226CDDD700D34161 /* LibraryBookViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85C9122226CDDD700D34161 /* LibraryBookViewModel.swift */; };
 		A85C9126226CE47E00D34161 /* BookHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85C9125226CE47E00D34161 /* BookHelper.swift */; };
+		A85C9128226D224400D34161 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85C9127226D224400D34161 /* String.swift */; };
+		A85C912A226D248A00D34161 /* BookWordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85C9129226D248A00D34161 /* BookWordsViewController.swift */; };
+		A85C9130226D25F400D34161 /* PrideAndPrejudice.txt in Resources */ = {isa = PBXBuildFile; fileRef = A85C912C226D25F400D34161 /* PrideAndPrejudice.txt */; };
+		A85C9131226D25F400D34161 /* ATaleOfTwoCities.txt in Resources */ = {isa = PBXBuildFile; fileRef = A85C912D226D25F400D34161 /* ATaleOfTwoCities.txt */; };
+		A85C9132226D25F400D34161 /* Frankenstein.txt in Resources */ = {isa = PBXBuildFile; fileRef = A85C912E226D25F400D34161 /* Frankenstein.txt */; };
+		A85C9133226D25F400D34161 /* TheOldManAndTheSea.txt in Resources */ = {isa = PBXBuildFile; fileRef = A85C912F226D25F400D34161 /* TheOldManAndTheSea.txt */; };
+		A85C9139226E16DB00D34161 /* BookWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85C9138226E16DB00D34161 /* BookWord.swift */; };
+		A85C9141226E1DAE00D34161 /* BookWordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85C9140226E1DAE00D34161 /* BookWordViewModel.swift */; };
+		A85C9143226E554B00D34161 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85C9142226E554B00D34161 /* UIView.swift */; };
+		A85C9147226E5DF100D34161 /* TheOldManAndTheSea.txt in Resources */ = {isa = PBXBuildFile; fileRef = A85C912F226D25F400D34161 /* TheOldManAndTheSea.txt */; };
+		A85C9177226E690F00D34161 /* BookWordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85C9175226E690F00D34161 /* BookWordCell.swift */; };
+		A85C9178226E690F00D34161 /* BookWordCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A85C9176226E690F00D34161 /* BookWordCell.xib */; };
 		A8CF47C2226B66EF00F61FEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CF47C1226B66EF00F61FEE /* AppDelegate.swift */; };
 		A8CF47C7226B66EF00F61FEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8CF47C5226B66EF00F61FEE /* Main.storyboard */; };
 		A8CF47C9226B66F000F61FEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8CF47C8226B66F000F61FEE /* Assets.xcassets */; };
@@ -40,6 +52,17 @@
 		A85C911F226CDD9800D34161 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		A85C9122226CDDD700D34161 /* LibraryBookViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryBookViewModel.swift; sourceTree = "<group>"; };
 		A85C9125226CE47E00D34161 /* BookHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookHelper.swift; sourceTree = "<group>"; };
+		A85C9127226D224400D34161 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		A85C9129226D248A00D34161 /* BookWordsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookWordsViewController.swift; sourceTree = "<group>"; };
+		A85C912C226D25F400D34161 /* PrideAndPrejudice.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PrideAndPrejudice.txt; sourceTree = "<group>"; };
+		A85C912D226D25F400D34161 /* ATaleOfTwoCities.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ATaleOfTwoCities.txt; sourceTree = "<group>"; };
+		A85C912E226D25F400D34161 /* Frankenstein.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Frankenstein.txt; sourceTree = "<group>"; };
+		A85C912F226D25F400D34161 /* TheOldManAndTheSea.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TheOldManAndTheSea.txt; sourceTree = "<group>"; };
+		A85C9138226E16DB00D34161 /* BookWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookWord.swift; sourceTree = "<group>"; };
+		A85C9140226E1DAE00D34161 /* BookWordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookWordViewModel.swift; sourceTree = "<group>"; };
+		A85C9142226E554B00D34161 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		A85C9175226E690F00D34161 /* BookWordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookWordCell.swift; sourceTree = "<group>"; };
+		A85C9176226E690F00D34161 /* BookWordCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookWordCell.xib; sourceTree = "<group>"; };
 		A8CF47BE226B66EF00F61FEE /* BooksWords.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BooksWords.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8CF47C1226B66EF00F61FEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8CF47C6226B66EF00F61FEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -82,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				A85C911F226CDD9800D34161 /* Book.swift */,
+				A85C9138226E16DB00D34161 /* BookWord.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -90,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				A85C9122226CDDD700D34161 /* LibraryBookViewModel.swift */,
+				A85C9140226E1DAE00D34161 /* BookWordViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -100,6 +125,17 @@
 				A85C9125226CE47E00D34161 /* BookHelper.swift */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		A85C912B226D25A900D34161 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A85C912D226D25F400D34161 /* ATaleOfTwoCities.txt */,
+				A85C912E226D25F400D34161 /* Frankenstein.txt */,
+				A85C912C226D25F400D34161 /* PrideAndPrejudice.txt */,
+				A85C912F226D25F400D34161 /* TheOldManAndTheSea.txt */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		A8CF47B5226B66EF00F61FEE = {
@@ -129,6 +165,7 @@
 				A85C911E226CDD8500D34161 /* Model */,
 				A8CF480A226C5F8300F61FEE /* Presenter */,
 				A8CF47F5226B828500F61FEE /* Protocol */,
+				A85C912B226D25A900D34161 /* Resources */,
 				A8CF47E2226B6BCC00F61FEE /* View */,
 				A85C9121226CDDC300D34161 /* ViewModel */,
 				A8CF47E1226B698E00F61FEE /* Supporting files */,
@@ -171,6 +208,7 @@
 			children = (
 				A8CF47E4226B6ED100F61FEE /* HomeViewController.swift */,
 				A8CF47FE226BC34000F61FEE /* LibraryBookViewController.swift */,
+				A85C9129226D248A00D34161 /* BookWordsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -178,7 +216,9 @@
 		A8CF47EA226B767B00F61FEE /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				A85C9127226D224400D34161 /* String.swift */,
 				A8CF47FC226B900300F61FEE /* UINavigationController.swift */,
+				A85C9142226E554B00D34161 /* UIView.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -197,6 +237,8 @@
 			children = (
 				A8CF4801226BC3CD00F61FEE /* BookCell.swift */,
 				A8CF4802226BC3CD00F61FEE /* BookCell.xib */,
+				A85C9175226E690F00D34161 /* BookWordCell.swift */,
+				A85C9176226E690F00D34161 /* BookWordCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -291,9 +333,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8CF4804226BC3CD00F61FEE /* BookCell.xib in Resources */,
+				A85C9131226D25F400D34161 /* ATaleOfTwoCities.txt in Resources */,
 				A8CF47CC226B66F000F61FEE /* LaunchScreen.storyboard in Resources */,
+				A85C9130226D25F400D34161 /* PrideAndPrejudice.txt in Resources */,
+				A85C9132226D25F400D34161 /* Frankenstein.txt in Resources */,
+				A85C9133226D25F400D34161 /* TheOldManAndTheSea.txt in Resources */,
 				A8CF47C9226B66F000F61FEE /* Assets.xcassets in Resources */,
 				A8CF47C7226B66EF00F61FEE /* Main.storyboard in Resources */,
+				A85C9178226E690F00D34161 /* BookWordCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +348,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A85C9147226E5DF100D34161 /* TheOldManAndTheSea.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,16 +360,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8CF4809226C5F3700F61FEE /* Coordinator.swift in Sources */,
+				A85C9139226E16DB00D34161 /* BookWord.swift in Sources */,
+				A85C9128226D224400D34161 /* String.swift in Sources */,
 				A8CF47C2226B66EF00F61FEE /* AppDelegate.swift in Sources */,
+				A85C912A226D248A00D34161 /* BookWordsViewController.swift in Sources */,
+				A85C9177226E690F00D34161 /* BookWordCell.swift in Sources */,
 				A85C9126226CE47E00D34161 /* BookHelper.swift in Sources */,
 				A8CF47FF226BC34000F61FEE /* LibraryBookViewController.swift in Sources */,
 				A8CF47F9226B83A200F61FEE /* BorderedButton.swift in Sources */,
 				A8CF4803226BC3CD00F61FEE /* BookCell.swift in Sources */,
 				A8CF47FD226B900300F61FEE /* UINavigationController.swift in Sources */,
+				A85C9141226E1DAE00D34161 /* BookWordViewModel.swift in Sources */,
 				A8CF47E5226B6ED100F61FEE /* HomeViewController.swift in Sources */,
 				A8CF480C226C5FA200F61FEE /* MainCoordinator.swift in Sources */,
 				A85C9123226CDDD700D34161 /* LibraryBookViewModel.swift in Sources */,
 				A85C9120226CDD9800D34161 /* Book.swift in Sources */,
+				A85C9143226E554B00D34161 /* UIView.swift in Sources */,
 				A8CF47F7226B829200F61FEE /* Storyboarded.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

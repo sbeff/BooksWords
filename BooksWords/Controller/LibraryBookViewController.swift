@@ -10,6 +10,10 @@ import UIKit
 
 final class LibraryBookViewController: UIViewController, Storyboarded {
     
+    // MARK: - Coordinator
+    
+    weak var coordinator: MainCoordinator?
+    
     // MARK: - IBOutlets
     
     @IBOutlet private var collectionView: UICollectionView!
@@ -70,7 +74,7 @@ extension LibraryBookViewController: UICollectionViewDataSource {
 
 extension LibraryBookViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+        coordinator?.openBookWords(withLibraryBook: viewModel[indexPath.row])
     }
 }
 

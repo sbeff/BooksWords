@@ -107,6 +107,36 @@
             </objects>
             <point key="canvasLocation" x="987" y="-208"/>
         </scene>
+        <!--Book Words View Controller-->
+        <scene sceneID="mD7-c0-9q6">
+            <objects>
+                <viewController storyboardIdentifier="BookWordsViewController" id="XMr-ve-fgV" customClass="BookWordsViewController" customModule="BooksWords" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OML-gi-eDn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="71k-Am-fyA">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <color key="backgroundColor" name="MainRed"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" name="MainRed"/>
+                        <constraints>
+                            <constraint firstItem="71k-Am-fyA" firstAttribute="top" secondItem="7qi-xm-x71" secondAttribute="top" id="O9A-er-ZQs"/>
+                            <constraint firstItem="71k-Am-fyA" firstAttribute="leading" secondItem="7qi-xm-x71" secondAttribute="leading" id="UWq-Yo-yWV"/>
+                            <constraint firstItem="7qi-xm-x71" firstAttribute="trailing" secondItem="71k-Am-fyA" secondAttribute="trailing" id="dDv-3X-xoq"/>
+                            <constraint firstAttribute="bottom" secondItem="71k-Am-fyA" secondAttribute="bottom" id="jle-yj-epf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7qi-xm-x71"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="71k-Am-fyA" id="sut-Ga-00r"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DaJ-Ga-Y5q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1804" y="-208"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Book" width="150" height="150"/>

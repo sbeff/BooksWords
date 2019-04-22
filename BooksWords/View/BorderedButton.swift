@@ -22,12 +22,7 @@ final class BorderedButton: UIButton {
         contentEdgeInsets = UIEdgeInsets(top: 16.0, left: 16.0, bottom: 16.0, right: 16.0)
         
         backgroundColor = .clear
-        let blurEffect: UIBlurEffect = UIBlurEffect(style: .light)
-        let blurEffectView: UIVisualEffectView = UIVisualEffectView(effect: blurEffect)
-        blurEffectView.frame = bounds
-        blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        blurEffectView.isUserInteractionEnabled = false
-        setTitleColor(.white, for: .normal)
-        insertSubview(blurEffectView, at: 0)
+        
+        applyBlur()
     }
 }

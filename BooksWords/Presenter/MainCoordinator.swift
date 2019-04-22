@@ -23,7 +23,21 @@ final class MainCoordinator: Coordinator {
     
     func openLibraryBook() {
         let libraryBookViewController: LibraryBookViewController = LibraryBookViewController.instantiate()
+        libraryBookViewController.coordinator = self
         
         navigationController.pushViewController(libraryBookViewController, animated: true)
+    }
+    
+    func openBookWords(withLibraryBook libraryBook: LibraryBookViewModel) {
+        let vc = BookWordsViewController.instantiate()
+        vc.coordinator = self
+        vc.libraryBookViewModel = libraryBook
+        navigationController.pushViewController(vc, animated: true)
+    }
+    
+    func presentErrorAlertController(withError error: Error) {
+        let alertController: UIAlertController = UIAlertController(title: "Error", message: error.localizedDescription, preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        navigationController.present(alertController, animated: true, completion: nil)
     }
 }
