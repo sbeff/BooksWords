@@ -35,6 +35,7 @@ class BooksWordsTests: XCTestCase {
     func testBookWordViewModel() {
         XCTAssertEqual(bookWordViewModel.word, "the")
         XCTAssertEqual(bookWordViewModel.occurrences, 2338)
+        XCTAssertEqual(bookWordViewModel.occurrencesIsPrimeNumber, false)
     }
     
     func testLibraryBookGetStatistics() {
@@ -48,9 +49,11 @@ class BooksWordsTests: XCTestCase {
                 
                 XCTAssertEqual(bookWordViewModels.first?.word, "the")
                 XCTAssertEqual(bookWordViewModels.first?.occurrences, 2338)
+                XCTAssertEqual(bookWordViewModels.first?.occurrencesIsPrimeNumber, false)
                 
                 XCTAssertEqual(bookWordViewModels.last?.word, "yours")
                 XCTAssertEqual(bookWordViewModels.last?.occurrences, 1)
+                XCTAssertEqual(bookWordViewModels.last?.occurrencesIsPrimeNumber, true)
             } catch {
                 XCTFail()
             }

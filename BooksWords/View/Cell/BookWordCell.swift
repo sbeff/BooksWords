@@ -23,7 +23,7 @@ class BookWordCell: UITableViewCell {
     var viewModel: BookWordViewModel! {
         didSet {
             wordLabel.text = viewModel.word
-            occurrencesLabel.text = "\(viewModel.occurrences)"
+            occurrencesLabel.text = "\(viewModel.occurrences) - \(viewModel.occurrencesIsPrimeNumber ? "Prime" : "Not prime")"
         }
     }
     
