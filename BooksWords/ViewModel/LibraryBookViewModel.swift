@@ -42,7 +42,7 @@ struct LibraryBookViewModel {
         
         var toReturn = [String: Int]()
         
-        text.getWordsArray().forEach { word in
+        text.getWordsArray().lazy.forEach { word in
             if let i = toReturn[word] {
                 toReturn[word] = i + 1
             } else {
@@ -50,9 +50,9 @@ struct LibraryBookViewModel {
             }
         }
         
-        return toReturn.sorted(by: {
+        return toReturn.lazy.sorted(by: {
             return ($0.1, $1.0) > ($1.1, $0.0)
-        }).map({
+        }).lazy.map({
             return BookWord(word: $0.key, occurrences: $0.value)
         })
     }

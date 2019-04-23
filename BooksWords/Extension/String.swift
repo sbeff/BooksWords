@@ -10,9 +10,9 @@ import Foundation
 
 extension String {
     func getWordsArray() -> [String] {
-        return components(separatedBy: CharacterSet.alphanumerics.inverted).map({
+        return components(separatedBy: CharacterSet.alphanumerics.inverted).lazy.map({
             return $0.lowercased()
-        }).filter {
+        }).lazy.filter {
             return !$0.isEmpty
         }
     }
