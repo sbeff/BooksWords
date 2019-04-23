@@ -36,7 +36,35 @@ final class MainCoordinator: Coordinator {
     }
     
     func presentErrorAlertController(withError error: Error) {
-        let alertController: UIAlertController = UIAlertController(title: "Error", message: error.localizedDescription, preferredStyle: .alert)
+        presentErrorAlertController(withErrorMessage: error.localizedDescription)
+    }
+    
+    func presentOpenAnURLAlertController() {
+        let alertController: UIAlertController = UIAlertController(title: "Open an URL (only https protocol is supported)", message: nil, preferredStyle: .alert)
+        
+        alertController.addTextField { textField in
+            textField.placeholder = "URL"
+            textField.autocapitalizationType = .none
+            textField.textAlignment = .center
+            textField.autocorrectionType = .no
+        }
+        
+        alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: { [unowned self, alertController] _ in
+            if let urlString = alertController.textFields?[0].text {
+                if urlString.hasPrefix("https://") {
+                    let libraryBookViewModel = LibraryBookViewModel(book: Book(title: "", author: "", fileName: urlString))
+                    self.openBookWords(withLibraryBook: libraryBookViewModel)
+                } else {
+                    self.presentErrorAlertController(withErrorMessage: "The URL provided is not valid")
+                }
+            }
+        }))
+        
+        navigationController.present(alertController, animated: true, completion: nil)
+    }
+    
+    func presentErrorAlertController(withErrorMessage message: String) {
+        let alertController: UIAlertController = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
         alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         navigationController.present(alertController, animated: true, completion: nil)
     }

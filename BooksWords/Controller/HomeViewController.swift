@@ -55,6 +55,10 @@ final class HomeViewController: UIViewController, Storyboarded {
         coordinator?.openLibraryBook()
     }
     
+    @IBAction func openAnURLButtonTapped() {
+        coordinator?.presentOpenAnURLAlertController()
+    }
+    
     // MARK: - Methods
     
     @objc private func handlePan(_ recognizer: UIPanGestureRecognizer) {

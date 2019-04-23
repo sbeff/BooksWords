@@ -25,11 +25,19 @@ struct LibraryBookViewModel {
     
     var fileUrl: URL {
         get {
-            guard let url = Bundle.main.url(forResource: book.fileName, withExtension: "txt") else {
-                fatalError("The book \(book.fileName) does not exist.")
+            if book.fileName.hasPrefix("https://") {
+                guard let url = URL(string: book.fileName) else {
+                    fatalError("The URL provided is not valid")
+                }
+                
+                return url
+            } else {
+                guard let url = Bundle.main.url(forResource: book.fileName, withExtension: "txt") else {
+                    fatalError("The book \(book.fileName) does not exist.")
+                }
+                
+                return url
             }
-            
-            return url
         }
     }
     

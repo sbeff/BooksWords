@@ -17,6 +17,8 @@ class BooksWordsTests: XCTestCase {
     
     let libraryBookViewModel: LibraryBookViewModel = LibraryBookViewModel(book: Book(title: "The Old Man and the Sea", author: "Ernest Hemingway", fileName: "TheOldManAndTheSea"))
     
+    let urlLibraryBookViewModel: LibraryBookViewModel = LibraryBookViewModel(book: Book(title: "", author: "", fileName: "https://www.gutenberg.org/cache/epub/1080/pg1080.txt"))
+    
     // MARK: - Tests
     
     override func setUp() {
@@ -57,6 +59,26 @@ class BooksWordsTests: XCTestCase {
             } catch {
                 XCTFail()
             }
+        }
+    }
+    
+    func testOpenAnURL() {
+        do {
+            let bookWordViewModels: [BookWordViewModel] = try urlLibraryBookViewModel.getBookWords().map({
+                return BookWordViewModel(bookWord: $0)
+            })
+            
+            XCTAssertEqual(bookWordViewModels.count, 1618)
+            
+            XCTAssertEqual(bookWordViewModels.first?.word, "the")
+            XCTAssertEqual(bookWordViewModels.first?.occurrences, 347)
+            XCTAssertEqual(bookWordViewModels.first?.occurrencesIsPrimeNumber, true)
+            
+            XCTAssertEqual(bookWordViewModels.last?.word, "zip")
+            XCTAssertEqual(bookWordViewModels.last?.occurrences, 1)
+            XCTAssertEqual(bookWordViewModels.last?.occurrencesIsPrimeNumber, true)
+        } catch {
+            XCTFail()
         }
     }
 }
