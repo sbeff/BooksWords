@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A8158A31226F0E6A00BDBDD0 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8158A30226F0E6A00BDBDD0 /* Dictionary.swift */; };
 		A85C9120226CDD9800D34161 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85C911F226CDD9800D34161 /* Book.swift */; };
 		A85C9123226CDDD700D34161 /* LibraryBookViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85C9122226CDDD700D34161 /* LibraryBookViewModel.swift */; };
 		A85C9126226CE47E00D34161 /* BookHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85C9125226CE47E00D34161 /* BookHelper.swift */; };
@@ -49,6 +50,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A8158A30226F0E6A00BDBDD0 /* Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
 		A85C911F226CDD9800D34161 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		A85C9122226CDDD700D34161 /* LibraryBookViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryBookViewModel.swift; sourceTree = "<group>"; };
 		A85C9125226CE47E00D34161 /* BookHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookHelper.swift; sourceTree = "<group>"; };
@@ -216,6 +218,7 @@
 		A8CF47EA226B767B00F61FEE /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				A8158A30226F0E6A00BDBDD0 /* Dictionary.swift */,
 				A85C9127226D224400D34161 /* String.swift */,
 				A8CF47FC226B900300F61FEE /* UINavigationController.swift */,
 				A85C9142226E554B00D34161 /* UIView.swift */,
@@ -361,6 +364,7 @@
 			files = (
 				A8CF4809226C5F3700F61FEE /* Coordinator.swift in Sources */,
 				A85C9139226E16DB00D34161 /* BookWord.swift in Sources */,
+				A8158A31226F0E6A00BDBDD0 /* Dictionary.swift in Sources */,
 				A85C9128226D224400D34161 /* String.swift in Sources */,
 				A8CF47C2226B66EF00F61FEE /* AppDelegate.swift in Sources */,
 				A85C912A226D248A00D34161 /* BookWordsViewController.swift in Sources */,

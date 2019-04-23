@@ -62,6 +62,28 @@ class BooksWordsTests: XCTestCase {
         }
     }
     
+    func testLibraryBookGetStatisticsWorseAlternative() {
+        measure {
+            do {
+                let bookWordViewModels: [BookWordViewModel] = try libraryBookViewModel.getBookWordsWorseAlternative().map({
+                    return BookWordViewModel(bookWord: $0)
+                })
+                
+                XCTAssertEqual(bookWordViewModels.count, 2555)
+                
+                XCTAssertEqual(bookWordViewModels.first?.word, "the")
+                XCTAssertEqual(bookWordViewModels.first?.occurrences, 2338)
+                XCTAssertEqual(bookWordViewModels.first?.occurrencesIsPrimeNumber, false)
+                
+                XCTAssertEqual(bookWordViewModels.last?.word, "yours")
+                XCTAssertEqual(bookWordViewModels.last?.occurrences, 1)
+                XCTAssertEqual(bookWordViewModels.last?.occurrencesIsPrimeNumber, true)
+            } catch {
+                XCTFail()
+            }
+        }
+    }
+    
     func testOpenAnURL() {
         do {
             let bookWordViewModels: [BookWordViewModel] = try urlLibraryBookViewModel.getBookWords().map({
