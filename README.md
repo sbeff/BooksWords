@@ -1,4 +1,4 @@
-![Swift 5.0](https://img.shields.io/badge/Swift-5.0-orange.svg?style=flat) ![iOS](https://img.shields.io/badge/platform-iOS-%23989898.svg?color=blue) ![MIT license](https://img.shields.io/cocoapods/l/Tags.svg?style=flat&color=brightgreen)
+![Swift 5.0](https://img.shields.io/badge/Swift-5.0-orange.svg?style=flat) ![iOS](https://img.shields.io/badge/platform-iOS-%23989898.svg?color=blue) ![MIT license](https://img.shields.io/cocoapods/l/Tags.svg?style=flat&color=brightgreen) [![Build Status](https://app.bitrise.io/app/46cf991a18f7fcb0/status.svg?token=RKBK6v_lz6767QePbwV-ng&branch=ci)](https://app.bitrise.io/app/46cf991a18f7fcb0)
 
 # BooksWords
 This app lets you know how many times a word is contained in a book in the book library section or in a book downloaded from the web. I developed the app using the [TDD approach](https://en.wikipedia.org/wiki/Test-driven_development), implementing the [MVVM pattern](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93viewmodel) and the [Coordinator pattern](http://khanlou.com/2015/10/coordinators-redux/).
